@@ -7,7 +7,7 @@ class FizzBuzz(divisorAndWordList: List<DivisorAndWord>) {
 
     fun fizzbuzz(number: Int):String {
         var result = ""
-        divisorAndWordList.forEachIndexed { index, divisorAndWord ->  result += divisorAndWord.evaluateAndGetWordOrEmpty(number)}
+        divisorAndWordList.forEach { divisorAndWord ->  result += divisorAndWord.evaluateAndGetWordOrEmpty(number)}
 
         if (result != "") {
             return result
